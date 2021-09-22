@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeASMInformation.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeASM_NASMInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
@@ -32,6 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/Platform/UnixPaths.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
+  "CMakeFiles/3.20.2/CMakeASM_NASMCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"

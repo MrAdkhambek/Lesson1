@@ -1,16 +1,14 @@
-#include <iomanip>
 #include <iostream>
-
-using namespace std;
+#include <bitset>
 
 #define print(x) std::cout << (x)
 #define println(x) std::cout << (x) << std::endl
 
+#define MAX(x,y) (x > y) ? (x) : (y)
+#define MIX(x,y) (x > y) ? (y) : (x)
+
 
 int main() {
-
-    int i = 0xA;
-    cout  << i;
-
-    return 0x0;
+    println(MAX(4,5));
+    return EXIT_SUCCESS;                 // finish main method;
 }

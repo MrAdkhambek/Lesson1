@@ -26,6 +26,7 @@
     // Binary Literals
     int x = 10;
     int y = 0xA;
+    int i = 0b1010;
     int z = 012;
 ```
 
@@ -62,4 +63,94 @@ int main() {
     std::cout << std::fixed;
     std::cout << std::setprecision(2);
     std::cout << num1 << std::endl;
+```
+
+#Lesson7
+
+```c++
+#include <iostream>
+
+#define print(x) std::cout << (x)
+#define println(x) std::cout << (x) << std::endl
+
+// Global
+int k;
+
+int main() {
+
+    // Local
+    int i;
+
+    {
+        // Inner
+        int j;
+        println(k);
+        println(i);
+        println(j);
+    }
+
+    println(k);
+    println(i);
+    println(j);
+    
+    println("Hello unicorn");
+    print(5);
+
+    return 0x0;
+}
+```
+
+```c++
+
+#include <iostream>
+
+#define print(x) std::cout << (x)
+#define println(x) std::cout << (x) << std::endl
+
+int main() {
+
+    bool isEven = false;
+
+    if (isEven) {
+        println("Juft");
+    } else {
+        println("Toq");
+    }
+
+    return 0x0;
+}
+```
+
+
+```c++
+    std::string a = "anagram";
+    std::string b = "nagamar";
+
+    int k = 0;
+
+    for (int i = 0; i < a.length(); ++i) {
+        k ^= a[i];
+        k ^= b[i];
+    }
+
+    println(k);
+```
+
+#Lesson8
+
+```c++
+#include <iostream>
+#include <bitset>
+
+#define print(x) std::cout << (x)
+#define println(x) std::cout << (x) << std::endl
+
+#define MAX(x,y) (x > y) ? (x) : (y)
+#define MIX(x,y) (x > y) ? (y) : (x)
+
+
+int main() {
+    println(MAX(4,5));
+    return EXIT_SUCCESS;                 // finish main method;
+}
 ```

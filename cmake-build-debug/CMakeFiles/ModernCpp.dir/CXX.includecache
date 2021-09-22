@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 /Users/adkhambek/CLionProjects/ModernCpp/main.cpp
-iomanip
--
 iostream
+-
+bitset
 -
 

@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/main.asm">
+			<Option target="ModernCpp"/>
+		</Unit>
 		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/main.cpp">
 			<Option target="ModernCpp"/>
 		</Unit>

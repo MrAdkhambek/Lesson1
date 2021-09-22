@@ -129,6 +129,14 @@ ModernCpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/build
 .PHONY : ModernCpp/fast
 
+main.o: main.asm.o
+.PHONY : main.o
+
+# target to build an object file
+main.asm.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/main.asm.o
+.PHONY : main.asm.o
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +170,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ModernCpp"
+	@echo "... main.o"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

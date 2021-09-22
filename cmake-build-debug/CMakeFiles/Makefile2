@@ -81,12 +81,12 @@ clean: CMakeFiles/ModernCpp.dir/clean
 CMakeFiles/ModernCpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ModernCpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target ModernCpp"
 .PHONY : CMakeFiles/ModernCpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ModernCpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ModernCpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ModernCpp.dir/rule

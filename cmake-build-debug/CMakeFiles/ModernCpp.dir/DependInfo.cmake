@@ -4,9 +4,18 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "ASM_NASM"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_ASM_NASM
+  "/Users/adkhambek/CLionProjects/ModernCpp/main.asm" "/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles/ModernCpp.dir/main.asm.o"
+  )
+set(CMAKE_ASM_NASM_COMPILER_ID "NASM")
+
+# The include file search paths:
+set(CMAKE_ASM_NASM_TARGET_INCLUDE_PATH
+  )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/adkhambek/CLionProjects/ModernCpp/main.cpp" "/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles/ModernCpp.dir/main.cpp.o"
   )
