@@ -11,4 +11,12 @@ iostream
 -
 bitset
 -
+any
+-
+cmath
+-
+ctype.h
+-
+cstdlib
+-
 
