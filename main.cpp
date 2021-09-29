@@ -1,8 +1,5 @@
 #include <iostream>
-#include <bitset>
-#include <any>
-#include <cmath>
-#include <ctype.h>
+#include <assert.h>
 #include <cstdlib>
 
 
@@ -24,13 +21,39 @@
 #define print(x) std::cout << (x)
 #define println(x) std::cout << (x) << std::endl
 
-float blablabla(float a, float b, float c) {
-    return (a + b + c) / 3;
+int summa(int num) {
+    const int step = num / 2;
+    int s = 1;
+
+    for (int i = 2; i <= step; ++i) {
+        if (!(num % i)) {
+            s += i;
+        }
+    }
+    return s;
+}
+
+bool isPerfect(int num) {
+    return summa(num) == num;
+}
+
+// k > 0
+void kPerfect(int k) {
+    int i = 0;      // perfect
+    int step = 6;   // qadam
+
+    while (i != k) {
+        if (isPerfect(step)) {
+            i++;
+            println(summa(step));
+        }
+        step++;
+    }
 }
 
 int main() {
 
-    println(blablabla(2, 2, 3));
+    kPerfect(1);
 
     return EXIT_SUCCESS;                 // finish main method;
 }
