@@ -154,3 +154,89 @@ int main() {
     return EXIT_SUCCESS;                 // finish main method;
 }
 ```
+
+#Lesson9
+```c++
+int main() {
+
+    int n;
+    std::cin >> n;
+
+    const float step = 0.0001;
+    float temp = 0;
+
+    // error
+    float e = n;
+
+    while (e >= step) {
+        temp += step;
+        e = n - (temp * temp);
+    }
+
+    print("Ildizi ");
+    println(temp);
+
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+#Lesson11 
+
+```c++
+#include <iostream>
+#include <bitset>
+#include <any>
+#include <stdlib.h>
+
+#define print(x) std::cout << (x)
+#define println(x) std::cout << (x) << std::endl
+
+#define MAX(x, y) (x > y) ? (x) : (y)
+#define MIX(x, y) (x > y) ? (y) : (x)
+
+#define sizeOfArr(x) sizeof(x) / sizeof(x[0])
+
+#define forever for (;;)
+
+#define printArr(arr) {                                 \
+        int size = sizeOfArr(arr);                      \
+        for (int i = 0; i < size; ++i) print(arr[i]);   \
+        }
+
+bool sendSmsService1(std::string name) {
+    println(name);
+    return true;
+}
+bool sendSmsService2(std::string name) {
+    println(name);
+    return true;
+}
+
+int main() {
+
+    if (sendSmsService1("Avval") || sendSmsService2("Keyin")) {
+        
+    }
+
+    if (sendSmsService1("Avval") && sendSmsService2("Keyin")) {
+        
+    }
+
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+#Lesson13
+
+```c++
+float blablabla(float a, float b, float c) {
+    return (a + b + c) / 3;
+}
+
+int main() {
+
+    println(blablabla(2, 2, 3));
+
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
