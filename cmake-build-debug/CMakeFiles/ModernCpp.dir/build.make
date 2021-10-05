@@ -66,41 +66,43 @@ include CMakeFiles/ModernCpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ModernCpp.dir/flags.make
 
-CMakeFiles/ModernCpp.dir/main.asm.o: CMakeFiles/ModernCpp.dir/flags.make
-CMakeFiles/ModernCpp.dir/main.asm.o: ../main.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM_NASM object CMakeFiles/ModernCpp.dir/main.asm.o"
-	/usr/local/bin/nasm $(ASM_NASM_INCLUDES) $(ASM_NASM_FLAGS) -f macho64 -o CMakeFiles/ModernCpp.dir/main.asm.o /Users/adkhambek/CLionProjects/ModernCpp/main.asm
+CMakeFiles/ModernCpp.dir/src/main.asm.o: CMakeFiles/ModernCpp.dir/flags.make
+CMakeFiles/ModernCpp.dir/src/main.asm.o: ../src/main.asm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM_NASM object CMakeFiles/ModernCpp.dir/src/main.asm.o"
+	/usr/local/bin/nasm $(ASM_NASM_INCLUDES) $(ASM_NASM_FLAGS) -f macho64 -o CMakeFiles/ModernCpp.dir/src/main.asm.o /Users/adkhambek/CLionProjects/ModernCpp/src/main.asm
 
-CMakeFiles/ModernCpp.dir/main.cpp.o: CMakeFiles/ModernCpp.dir/flags.make
-CMakeFiles/ModernCpp.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ModernCpp.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ModernCpp.dir/main.cpp.o -c /Users/adkhambek/CLionProjects/ModernCpp/main.cpp
+CMakeFiles/ModernCpp.dir/src/main.cpp.o: CMakeFiles/ModernCpp.dir/flags.make
+CMakeFiles/ModernCpp.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ModernCpp.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ModernCpp.dir/src/main.cpp.o -c /Users/adkhambek/CLionProjects/ModernCpp/src/main.cpp
 
-CMakeFiles/ModernCpp.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ModernCpp.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adkhambek/CLionProjects/ModernCpp/main.cpp > CMakeFiles/ModernCpp.dir/main.cpp.i
+CMakeFiles/ModernCpp.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ModernCpp.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adkhambek/CLionProjects/ModernCpp/src/main.cpp > CMakeFiles/ModernCpp.dir/src/main.cpp.i
 
-CMakeFiles/ModernCpp.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ModernCpp.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adkhambek/CLionProjects/ModernCpp/main.cpp -o CMakeFiles/ModernCpp.dir/main.cpp.s
+CMakeFiles/ModernCpp.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ModernCpp.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adkhambek/CLionProjects/ModernCpp/src/main.cpp -o CMakeFiles/ModernCpp.dir/src/main.cpp.s
 
 # Object files for target ModernCpp
 ModernCpp_OBJECTS = \
-"CMakeFiles/ModernCpp.dir/main.asm.o" \
-"CMakeFiles/ModernCpp.dir/main.cpp.o"
+"CMakeFiles/ModernCpp.dir/src/main.asm.o" \
+"CMakeFiles/ModernCpp.dir/src/main.cpp.o"
 
 # External object files for target ModernCpp
 ModernCpp_EXTERNAL_OBJECTS =
 
-ModernCpp: CMakeFiles/ModernCpp.dir/main.asm.o
-ModernCpp: CMakeFiles/ModernCpp.dir/main.cpp.o
-ModernCpp: CMakeFiles/ModernCpp.dir/build.make
-ModernCpp: CMakeFiles/ModernCpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ModernCpp"
+bin/ModernCpp: CMakeFiles/ModernCpp.dir/src/main.asm.o
+bin/ModernCpp: CMakeFiles/ModernCpp.dir/src/main.cpp.o
+bin/ModernCpp: CMakeFiles/ModernCpp.dir/build.make
+bin/ModernCpp: lib/libgtest_maind.1.11.0.dylib
+bin/ModernCpp: lib/libgtestd.1.11.0.dylib
+bin/ModernCpp: CMakeFiles/ModernCpp.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/ModernCpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ModernCpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/ModernCpp.dir/build: ModernCpp
+CMakeFiles/ModernCpp.dir/build: bin/ModernCpp
 .PHONY : CMakeFiles/ModernCpp.dir/build
 
 CMakeFiles/ModernCpp.dir/clean:

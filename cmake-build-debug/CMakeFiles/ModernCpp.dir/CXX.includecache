@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/adkhambek/CLionProjects/ModernCpp/main.cpp
+/Users/adkhambek/CLionProjects/ModernCpp/src/main.cpp
 iostream
 -
-assert.h
+cmath
 -
-cstdlib
+array
 -
 

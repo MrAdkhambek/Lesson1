@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ModernCpp.dir/main.asm.o"
-  "CMakeFiles/ModernCpp.dir/main.cpp.o"
-  "ModernCpp"
-  "ModernCpp.pdb"
+  "CMakeFiles/ModernCpp.dir/src/main.asm.o"
+  "CMakeFiles/ModernCpp.dir/src/main.cpp.o"
+  "bin/ModernCpp"
+  "bin/ModernCpp.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

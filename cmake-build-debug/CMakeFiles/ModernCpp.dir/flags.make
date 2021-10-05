@@ -5,13 +5,13 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 ASM_NASM_DEFINES = 
 
-ASM_NASM_INCLUDES = 
+ASM_NASM_INCLUDES = -I/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include -I/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest
 
 ASM_NASM_FLAGS = --prefix _
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include -isystem /Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest
 
 CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu++2a
 

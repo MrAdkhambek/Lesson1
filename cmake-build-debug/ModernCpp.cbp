@@ -5,13 +5,73 @@
 		<Option title="ModernCpp"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\googletest\;CMake Files\libs\googletest\googlemock\;CMake Files\libs\googletest\googlemock\cmake\;CMake Files\libs\googletest\googletest\;CMake Files\libs\googletest\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -38,12 +98,14 @@
 				</MakeCommands>
 			</Target>
 			<Target title="ModernCpp">
-				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/ModernCpp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/bin/ModernCpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
@@ -59,12 +121,14 @@
 				</MakeCommands>
 			</Target>
 			<Target title="ModernCpp/fast">
-				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/ModernCpp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug"/>
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/bin/ModernCpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
@@ -79,15 +143,254 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="gmock">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgmockd.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgmockd.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgmock_maind.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgmock_maind.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgtest_maind.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgtest_maind.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgtestd.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/lib/libgtestd.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_CREATE_SHARED_LIBRARY=1"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/include"/>
+					<Add directory="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/main.asm">
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/src/main.asm">
 			<Option target="ModernCpp"/>
 		</Unit>
-		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/main.cpp">
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/src/main.cpp">
 			<Option target="ModernCpp"/>
 		</Unit>
 		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\libs\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\libs\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\libs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\libs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\libs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\libs\googletest\googletest\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

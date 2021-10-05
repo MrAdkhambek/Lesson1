@@ -234,9 +234,7 @@ float blablabla(float a, float b, float c) {
 }
 
 int main() {
-
     println(blablabla(2, 2, 3));
-
     return EXIT_SUCCESS;                 // finish main method;
 }
 ```
@@ -278,6 +276,218 @@ void kPerfect(int k) {
 int main() {
 
     kPerfect(1);
+
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+
+
+#Lesson14
+
+```c++
+// num > 0
+// 2, 3
+bool isPrime(int num) {
+    if (num == 2 || num == 3) return true;
+
+    for (int j = 2; j <= sqrt(num); ++j) {
+        if (!(num % j)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+void printPrimes(int n) {
+    for (int i = 2; i <= n; ++i) {
+        if (isPrime(i)) {
+            println(i);
+        }
+    }
+}
+
+int main() {
+    printPrimes(100);
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+```c++
+
+void reverse(int n) {
+    int k;
+    std::cin >> k;
+    if (n > 1) reverse(n - 1);
+    println(k);
+}
+
+int main() {
+    int n;
+    print("N = ");
+    std::cin >> n;
+    reverse(n);
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+#Lesson16
+```c++
+#include <iostream>
+#include <cmath>
+
+#define print(x) std::cout << (x)
+#define println(x) std::cout << (x) << std::endl
+
+#define sizeOfArr(x) (sizeof(x) / sizeof(x[0]))
+
+#define printArr(arr) {                                 \
+        int size = sizeOfArr(arr);                      \
+        for (int i = 0; i < size; ++i) {                \
+            print(arr[i]);                              \
+            print(" ");                                 \
+        }}
+
+
+void merge(int arr1[], int arr2[], int arr3[], int size1, int size2, int size3) {
+    int index1 = 0;
+    int index2 = 0;
+    int index3 = 0;
+
+    while (index1 < size1 && index2 < size2) {
+        if (arr1[index1] > arr2[index2]) {
+            arr3[index3++] = arr2[index2++];
+        } else {
+            arr3[index3++] = arr1[index1++];
+        }
+    }
+
+    for (; index1 < size1;) {
+        arr3[index3++] = arr1[index1++];
+    }
+    for (; index2 < size2;) {
+        arr3[index3++] = arr2[index2++];
+    }
+}
+
+int main() {
+    int arr1[] = {1, 2, 4, 5, 7};
+    int arr2[] = {5, 6, 9};
+
+    int size1 = sizeOfArr(arr1);
+    int size2 = sizeOfArr(arr2);
+    int size3 = size1 + size2;
+
+    int arr3[size3];
+
+    merge(arr1, arr2, arr3, size1, size2, size3);
+
+    printArr(arr3)
+
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+```c++
+#include <iostream>
+#include <cmath>
+
+#define print(x) std::cout << (x)
+#define println(x) std::cout << (x) << std::endl
+
+#define sizeOfArr(x) (sizeof(x) / sizeof(x[0]))
+
+#define printArr(arr) {                                 \
+        int size = sizeOfArr(arr);                      \
+        for (int i = 0; i < size; ++i) {                \
+            print(arr[i]);                              \
+            print(" ");                                 \
+        }}
+
+
+// 73 31 96 24 46
+//  0  1  2  3  4
+
+int findMaxIndex(int arr[], int start, int size) {
+    int result = arr[start];
+    int resultIndex = start;
+
+    for (int i = start + 1; i < size; ++i) {
+        if (result < arr[i]) {
+            result = arr[i];
+            resultIndex = i;
+        }
+    }
+
+    return resultIndex;
+}
+
+int maxProfit(int arr[], int size) {
+    int day = 0;
+    int maxProfitResult = 0;
+
+    while (day < size) {
+        int maxIndex = findMaxIndex(arr, day, size);
+        maxProfitResult += (maxIndex + 1 - day) * arr[maxIndex];
+        day = maxIndex + 1;
+    }
+
+    return maxProfitResult;
+}
+
+int main() {
+    int arr[] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    int size = sizeOfArr(arr);
+
+    println(maxProfit(arr, size));
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+```c++
+#include <iostream>
+#include <cmath>
+#include <array>
+
+#define print(x) std::cout << (x)
+#define println(x) std::cout << (x) << std::endl
+
+#define sizeOfArr(x) (sizeof(x) / sizeof(x[0]))
+
+#define printArr(arr) {                                 \
+        int size = sizeOfArr(arr);                      \
+        for (int i = 0; i < size; ++i) {                \
+            print(arr[i]);                              \
+            print(" ");                                 \
+        }}
+
+
+std::pair<int, int> calculate(std::string value) {
+    int k = 0;
+    int K = 0;
+
+    for (auto item: value) {
+        if (std::isalpha(item) && std::islower(item)) {
+            k ++;
+        }
+        if (std::isalpha(item) && std::isupper(item)) {
+            K ++;
+        }
+    }
+
+    return std::pair<int, int>(k, K);
+}
+
+int main() {
+
+    auto result = calculate("Adam Peter");
+
+    print("Kichik = "); println(result.first);
+    print("Katta = "); println(result.second);
+    
+    
+    std::pair<int, int> pairs[10];
+    
 
     return EXIT_SUCCESS;                 // finish main method;
 }
