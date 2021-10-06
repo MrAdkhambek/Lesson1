@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ModernCpp.dir/src/SolutionBFS.cpp.o"
+  "CMakeFiles/ModernCpp.dir/src/SolutionRecursion.cpp.o"
+  "CMakeFiles/ModernCpp.dir/src/SolutionStack.cpp.o"
   "CMakeFiles/ModernCpp.dir/src/main.asm.o"
   "CMakeFiles/ModernCpp.dir/src/main.cpp.o"
   "bin/ModernCpp"

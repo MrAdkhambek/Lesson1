@@ -356,6 +356,15 @@
 		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/libs/googletest/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/src/SolutionBFS.cpp">
+			<Option target="ModernCpp"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/src/SolutionRecursion.cpp">
+			<Option target="ModernCpp"/>
+		</Unit>
+		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/src/SolutionStack.cpp">
+			<Option target="ModernCpp"/>
+		</Unit>
 		<Unit filename="/Users/adkhambek/CLionProjects/ModernCpp/src/main.asm">
 			<Option target="ModernCpp"/>
 		</Unit>

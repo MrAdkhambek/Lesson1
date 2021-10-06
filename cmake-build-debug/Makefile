@@ -246,6 +246,78 @@ gtest/fast:
 	$(MAKE) $(MAKESILENT) -f libs/googletest/googletest/CMakeFiles/gtest.dir/build.make libs/googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/SolutionBFS.o: src/SolutionBFS.cpp.o
+.PHONY : src/SolutionBFS.o
+
+# target to build an object file
+src/SolutionBFS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionBFS.cpp.o
+.PHONY : src/SolutionBFS.cpp.o
+
+src/SolutionBFS.i: src/SolutionBFS.cpp.i
+.PHONY : src/SolutionBFS.i
+
+# target to preprocess a source file
+src/SolutionBFS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionBFS.cpp.i
+.PHONY : src/SolutionBFS.cpp.i
+
+src/SolutionBFS.s: src/SolutionBFS.cpp.s
+.PHONY : src/SolutionBFS.s
+
+# target to generate assembly for a file
+src/SolutionBFS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionBFS.cpp.s
+.PHONY : src/SolutionBFS.cpp.s
+
+src/SolutionRecursion.o: src/SolutionRecursion.cpp.o
+.PHONY : src/SolutionRecursion.o
+
+# target to build an object file
+src/SolutionRecursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionRecursion.cpp.o
+.PHONY : src/SolutionRecursion.cpp.o
+
+src/SolutionRecursion.i: src/SolutionRecursion.cpp.i
+.PHONY : src/SolutionRecursion.i
+
+# target to preprocess a source file
+src/SolutionRecursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionRecursion.cpp.i
+.PHONY : src/SolutionRecursion.cpp.i
+
+src/SolutionRecursion.s: src/SolutionRecursion.cpp.s
+.PHONY : src/SolutionRecursion.s
+
+# target to generate assembly for a file
+src/SolutionRecursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionRecursion.cpp.s
+.PHONY : src/SolutionRecursion.cpp.s
+
+src/SolutionStack.o: src/SolutionStack.cpp.o
+.PHONY : src/SolutionStack.o
+
+# target to build an object file
+src/SolutionStack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionStack.cpp.o
+.PHONY : src/SolutionStack.cpp.o
+
+src/SolutionStack.i: src/SolutionStack.cpp.i
+.PHONY : src/SolutionStack.i
+
+# target to preprocess a source file
+src/SolutionStack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionStack.cpp.i
+.PHONY : src/SolutionStack.cpp.i
+
+src/SolutionStack.s: src/SolutionStack.cpp.s
+.PHONY : src/SolutionStack.s
+
+# target to generate assembly for a file
+src/SolutionStack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModernCpp.dir/build.make CMakeFiles/ModernCpp.dir/src/SolutionStack.cpp.s
+.PHONY : src/SolutionStack.cpp.s
+
 src/main.o: src/main.asm.o
 .PHONY : src/main.o
 
@@ -297,6 +369,15 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... src/SolutionBFS.o"
+	@echo "... src/SolutionBFS.i"
+	@echo "... src/SolutionBFS.s"
+	@echo "... src/SolutionRecursion.o"
+	@echo "... src/SolutionRecursion.i"
+	@echo "... src/SolutionRecursion.s"
+	@echo "... src/SolutionStack.o"
+	@echo "... src/SolutionStack.i"
+	@echo "... src/SolutionStack.s"
 	@echo "... src/main.o"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

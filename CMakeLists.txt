@@ -13,6 +13,6 @@ if(APPLE)
     string(APPEND CMAKE_ASM_NASM_FLAGS "--prefix _")
 endif(APPLE)
 
-add_executable(ModernCpp src/main.asm src/main.cpp)
+add_executable(ModernCpp src/main.asm src/main.cpp src/SolutionRecursion.cpp src/SolutionBFS.cpp src/SolutionStack.cpp)
 
 target_link_libraries(ModernCpp gtest gtest_main)

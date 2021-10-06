@@ -19,6 +19,9 @@ set(CMAKE_ASM_NASM_TARGET_INCLUDE_PATH
   "../libs/googletest/googletest"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/adkhambek/CLionProjects/ModernCpp/src/SolutionBFS.cpp" "/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles/ModernCpp.dir/src/SolutionBFS.cpp.o"
+  "/Users/adkhambek/CLionProjects/ModernCpp/src/SolutionRecursion.cpp" "/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles/ModernCpp.dir/src/SolutionRecursion.cpp.o"
+  "/Users/adkhambek/CLionProjects/ModernCpp/src/SolutionStack.cpp" "/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles/ModernCpp.dir/src/SolutionStack.cpp.o"
   "/Users/adkhambek/CLionProjects/ModernCpp/src/main.cpp" "/Users/adkhambek/CLionProjects/ModernCpp/cmake-build-debug/CMakeFiles/ModernCpp.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
