@@ -274,9 +274,7 @@ void kPerfect(int k) {
 }
 
 int main() {
-
     kPerfect(1);
-
     return EXIT_SUCCESS;                 // finish main method;
 }
 ```

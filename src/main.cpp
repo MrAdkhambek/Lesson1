@@ -1,78 +1,25 @@
 #include <iostream>
+#include <array>
 
 #define print(x) std::cout << (x)
 #define println(x) std::cout << (x) << std::endl
 
-#define sizeOfArr(arr) (sizeof (arr) / sizeof(arr[0]))
+#define sizeOfArr(x) sizeof(x) / sizeof(x[0])
 
-void print2dArray(int arr[3][3], int x, int y) {
-    for (int i = 0; i < x; ++i) {
-        for (int j = 0; j < y; ++j) {
-            print(arr[i][j]);
-            print(" ");
-        }
-        println("");
-    }
+bool isEquals(char left, char right) {
+    return std::tolower(left) == std::tolower(right);
 }
 
-void printArray(int arr[], int size) {
-    for (int j = 0; j < size; ++j) {
-        print(arr[j]);
-        print(" ");
-    }
-}
+bool isPalindrome(std::string value) {
+    const unsigned long length = value.length();
+    const unsigned long half = length / 2;
 
-int sizeNumber(long num) {
-    int k = 0;
-    while (num) {
-        num /= 10;
-        k++;
-    }
-    return k;
-}
-
-bool isHappyTicket(long num) {
-    const int size = sizeNumber(num);
-    int index = size / 2;
-
-    long left = 0;
-    long right = 0;
-
-    while (num) {
-        long lastNumber = num % 10;
-        num /= 10;
-
-        if (index-- > 0) {
-            right += lastNumber;
-        } else {
-            left += lastNumber;
-        }
+    for (int i = 0; i < half; ++i) {
+        if (!isEquals(value[i], value[length - i - 1])) return false;
     }
 
-    return left == right;
+    return true;
 }
-
-
-bool isHappyTicket(std::string num) {
-    const int size = num.length();
-    int index = size / 2;
-
-    long left = 0;
-    long right = 0;
-
-    for (auto item: num) {
-        int firstNumber = item - '0';
-        if (index-- > 0) {
-            left += firstNumber;
-        } else {
-            right += firstNumber;
-        }
-    }
-
-    return left == right;
-}
-
-// 2, 2, 3, 3, 5, 5, 1
 
 int getSingleNumber(int arr[], int size) {
     int result = 0;
@@ -85,8 +32,10 @@ int getSingleNumber(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {2, 5, 2, 5, 1, 1, 4};
-    println(getSingleNumber(arr, sizeOfArr(arr)));
+
+    int arr[] = {2, 3, 4, 8, 4, 2, 3};
+    int size = sizeOfArr(arr);
+    println(getSingleNumber(arr, size));
 
     return EXIT_SUCCESS;                 // finish main method;
 }
