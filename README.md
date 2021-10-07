@@ -588,3 +588,84 @@ int main() {
     return EXIT_SUCCESS;                 // finish main method;
 }
 ```
+
+#Lesson18 
+
+```c++
+void eraseSubStr(std::string &mainStr, size_t pos, const std::string &toErase) {
+    mainStr.erase(pos, toErase.length());
+}
+
+void eraseAllSubStr(std::string &mainStr, const std::string &toErase) {
+    size_t pos = std::string::npos;
+    while ((pos = mainStr.find(toErase)) != std::string::npos) {
+        mainStr.erase(pos, toErase.length());
+    }
+}
+
+void getSingleNumber(int arr[], int size) {
+    int result = 0;
+    std::string str = "|";
+
+    for (int i = 0; i < size; ++i) {
+        int number = arr[i];
+
+        std::string numberWithSymbol = std::to_string(number) + "|";
+        std::string numberWithSymbol2 = "|" + std::to_string(number) + "|";
+
+        size_t pos = str.find(numberWithSymbol2);
+        if (pos != std::string::npos) {
+            eraseSubStr(str, pos, numberWithSymbol);
+        } else {
+            str += numberWithSymbol;
+        }
+    }
+
+    eraseAllSubStr(str, "|");
+    println(str);
+}
+
+int main() {
+    int arr[] = {2, 3, 4, 8, 8, 55, 55, 7, 7, 66, 4, 2, 3};
+
+    int size = sizeOfArr(arr);
+    getSingleNumber(arr, size);
+
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```
+
+```c++
+int findIndexMin(int arr[], int start, int last) {
+    int min = arr[start];
+    int minIndex = start;
+
+    for (int i = start + 1; i < last; ++i) {
+        if (min > arr[i]) {
+            min = arr[i];
+            minIndex = i;
+        }
+    }
+
+    return minIndex;
+}
+
+void sort(int arr[], int size) {
+    for (int i = 0; i < size - 1; ++i) {
+        int minIndex = findIndexMin(arr, i, size);
+        std::swap(arr[i], arr[minIndex]);
+        printArr(arr, size);
+    }
+}
+
+int main() {
+    int arr[] = {2, 3, 4, 8, 8, 55, 55, 7, 7, 66, 4, 2, 3};
+    int size = sizeOfArr(arr);
+
+    printArr(arr, size);
+    sort(arr, size);
+
+
+    return EXIT_SUCCESS;                 // finish main method;
+}
+```

@@ -6,36 +6,43 @@
 
 #define sizeOfArr(x) sizeof(x) / sizeof(x[0])
 
-bool isEquals(char left, char right) {
-    return std::tolower(left) == std::tolower(right);
-}
-
-bool isPalindrome(std::string value) {
-    const unsigned long length = value.length();
-    const unsigned long half = length / 2;
-
-    for (int i = 0; i < half; ++i) {
-        if (!isEquals(value[i], value[length - i - 1])) return false;
-    }
-
-    return true;
-}
-
-int getSingleNumber(int arr[], int size) {
-    int result = 0;
-
+void printArr(int arr[], int size) {
     for (int i = 0; i < size; ++i) {
-        result ^= arr[i];
+        print(arr[i]);
+        print(" ");
+    }
+    println("");
+}
+
+int findIndexMin(int arr[], int start, int last) {
+    int min = arr[start];
+    int minIndex = start;
+
+    for (int i = start + 1; i < last; ++i) {
+        if (min > arr[i]) {
+            min = arr[i];
+            minIndex = i;
+        }
     }
 
-    return result;
+    return minIndex;
+}
+
+void sort(int arr[], int size) {
+    for (int i = 0; i < size - 1; ++i) {
+        int minIndex = findIndexMin(arr, i, size);
+        std::swap(arr[i], arr[minIndex]);
+        printArr(arr, size);
+    }
 }
 
 int main() {
-
-    int arr[] = {2, 3, 4, 8, 4, 2, 3};
+    int arr[] = {2, 3, 4, 8, 8, 55, 55, 7, 7, 66, 4, 2, 3};
     int size = sizeOfArr(arr);
-    println(getSingleNumber(arr, size));
+
+    printArr(arr, size);
+    sort(arr, size);
+
 
     return EXIT_SUCCESS;                 // finish main method;
 }
